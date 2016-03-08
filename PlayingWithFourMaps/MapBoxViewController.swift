@@ -1,23 +1,23 @@
 //
-//  ViewController.swift
+//  MapBoxViewController.swift
 //  PlayingWithFourMaps
 //
-//  Created by Michael Vilabrera on 3/7/16.
+//  Created by Michael Vilabrera on 3/8/16.
 //  Copyright © 2016 Giving Tree. All rights reserved.
 //
 
 import UIKit
 import Mapbox
 
-class ViewController: UIViewController, MGLMapViewDelegate {
-    
+class MapBoxViewController: UIViewController, MGLMapViewDelegate {
+
     var boxMap: MGLMapView?
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         self.boxMap = MGLMapView()
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
-
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -40,7 +40,4 @@ class ViewController: UIViewController, MGLMapViewDelegate {
         self.boxMap?.setCenterCoordinate(CLLocationCoordinate2DMake(0.0, 0.0), zoomLevel: 0, animated: true)
         self.view.addSubview(self.boxMap!)
     }
-    
-    
 }
-

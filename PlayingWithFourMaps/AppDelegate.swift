@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import GoogleMaps
+import Mapbox
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,8 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        GMSServices.provideAPIKey(Keys().GoogleKey)
+        MGLAccountManager.setAccessToken(Keys().MapBoxKey)
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        let viewController = MacMapViewController()
+        let viewController = ViewController()
+        //let viewController = MacMapViewController()
         let navController = UINavigationController(rootViewController: viewController)
         self.window?.rootViewController = navController
         self.window?.makeKeyAndVisible()

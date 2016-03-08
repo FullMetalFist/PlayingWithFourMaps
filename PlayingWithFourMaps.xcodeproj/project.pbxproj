@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CC8F9BFD6688CCE35BA8A85 /* Pods_PlayingWithFourMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4400474849068151B42B5A39 /* Pods_PlayingWithFourMaps.framework */; };
 		7C6979101C8DEA81008FCF06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69790F1C8DEA81008FCF06 /* AppDelegate.swift */; };
 		7C6979121C8DEA81008FCF06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6979111C8DEA81008FCF06 /* ViewController.swift */; };
 		7C6979171C8DEA81008FCF06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C6979161C8DEA81008FCF06 /* Assets.xcassets */; };
@@ -15,6 +16,9 @@
 		7C6979301C8DEA81008FCF06 /* PlayingWithFourMapsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69792F1C8DEA81008FCF06 /* PlayingWithFourMapsUITests.swift */; };
 		7C69793E1C8DEAC5008FCF06 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C69793D1C8DEAC5008FCF06 /* MapKit.framework */; };
 		7C6979401C8DF02E008FCF06 /* MacMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69793F1C8DF02E008FCF06 /* MacMapViewController.swift */; };
+		7C6979421C8F2C75008FCF06 /* GoogleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6979411C8F2C75008FCF06 /* GoogleMapViewController.swift */; };
+		7C6979461C8F2F20008FCF06 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6979451C8F2F20008FCF06 /* APIKeys.swift */; };
+		7C6979481C8F3C08008FCF06 /* MapBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6979471C8F3C08008FCF06 /* MapBoxViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4400474849068151B42B5A39 /* Pods_PlayingWithFourMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayingWithFourMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C69790C1C8DEA81008FCF06 /* PlayingWithFourMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayingWithFourMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C69790F1C8DEA81008FCF06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C6979111C8DEA81008FCF06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +54,11 @@
 		7C6979311C8DEA81008FCF06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C69793D1C8DEAC5008FCF06 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7C69793F1C8DF02E008FCF06 /* MacMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacMapViewController.swift; sourceTree = "<group>"; };
+		7C6979411C8F2C75008FCF06 /* GoogleMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapViewController.swift; sourceTree = "<group>"; };
+		7C6979451C8F2F20008FCF06 /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		7C6979471C8F3C08008FCF06 /* MapBoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapBoxViewController.swift; sourceTree = "<group>"; };
+		ADC00247718FF04837EF58BF /* Pods-PlayingWithFourMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayingWithFourMaps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayingWithFourMaps/Pods-PlayingWithFourMaps.debug.xcconfig"; sourceTree = "<group>"; };
+		FD980DA841F5ECB5016BF118 /* Pods-PlayingWithFourMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayingWithFourMaps.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayingWithFourMaps/Pods-PlayingWithFourMaps.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C69793E1C8DEAC5008FCF06 /* MapKit.framework in Frameworks */,
+				3CC8F9BFD6688CCE35BA8A85 /* Pods_PlayingWithFourMaps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B3134FEF2C24C0E15199C18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4400474849068151B42B5A39 /* Pods_PlayingWithFourMaps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7C6979031C8DEA81008FCF06 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +104,8 @@
 				7C6979231C8DEA81008FCF06 /* PlayingWithFourMapsTests */,
 				7C69792E1C8DEA81008FCF06 /* PlayingWithFourMapsUITests */,
 				7C69790D1C8DEA81008FCF06 /* Products */,
+				9CE59FAD03A858BB18093AD3 /* Pods */,
+				6B3134FEF2C24C0E15199C18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,7 +124,10 @@
 			children = (
 				7C69790F1C8DEA81008FCF06 /* AppDelegate.swift */,
 				7C6979111C8DEA81008FCF06 /* ViewController.swift */,
+				7C6979471C8F3C08008FCF06 /* MapBoxViewController.swift */,
+				7C6979411C8F2C75008FCF06 /* GoogleMapViewController.swift */,
 				7C69793F1C8DF02E008FCF06 /* MacMapViewController.swift */,
+				7C6979451C8F2F20008FCF06 /* APIKeys.swift */,
 				7C6979161C8DEA81008FCF06 /* Assets.xcassets */,
 				7C6979181C8DEA81008FCF06 /* LaunchScreen.storyboard */,
 				7C69791B1C8DEA81008FCF06 /* Info.plist */,
@@ -129,6 +153,15 @@
 			path = PlayingWithFourMapsUITests;
 			sourceTree = "<group>";
 		};
+		9CE59FAD03A858BB18093AD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADC00247718FF04837EF58BF /* Pods-PlayingWithFourMaps.debug.xcconfig */,
+				FD980DA841F5ECB5016BF118 /* Pods-PlayingWithFourMaps.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C6979341C8DEA81008FCF06 /* Build configuration list for PBXNativeTarget "PlayingWithFourMaps" */;
 			buildPhases = (
+				D2E33E0B9A85A8F6C8870E74 /* Check Pods Manifest.lock */,
 				7C6979081C8DEA81008FCF06 /* Sources */,
 				7C6979091C8DEA81008FCF06 /* Frameworks */,
 				7C69790A1C8DEA81008FCF06 /* Resources */,
+				79548445C6C998DD49DADDA4 /* Embed Pods Frameworks */,
+				C0A3F27A079B69B81729FCEC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,13 +295,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		79548445C6C998DD49DADDA4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlayingWithFourMaps/Pods-PlayingWithFourMaps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0A3F27A079B69B81729FCEC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlayingWithFourMaps/Pods-PlayingWithFourMaps-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2E33E0B9A85A8F6C8870E74 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7C6979081C8DEA81008FCF06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7C6979121C8DEA81008FCF06 /* ViewController.swift in Sources */,
+				7C6979481C8F3C08008FCF06 /* MapBoxViewController.swift in Sources */,
+				7C6979461C8F2F20008FCF06 /* APIKeys.swift in Sources */,
 				7C6979401C8DF02E008FCF06 /* MacMapViewController.swift in Sources */,
+				7C6979421C8F2C75008FCF06 /* GoogleMapViewController.swift in Sources */,
 				7C6979101C8DEA81008FCF06 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +485,7 @@
 		};
 		7C6979351C8DEA81008FCF06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADC00247718FF04837EF58BF /* Pods-PlayingWithFourMaps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PlayingWithFourMaps/Info.plist;
@@ -409,6 +497,7 @@
 		};
 		7C6979361C8DEA81008FCF06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD980DA841F5ECB5016BF118 /* Pods-PlayingWithFourMaps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PlayingWithFourMaps/Info.plist;
@@ -485,6 +574,7 @@
 				7C6979361C8DEA81008FCF06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C6979371C8DEA81008FCF06 /* Build configuration list for PBXNativeTarget "PlayingWithFourMapsTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +583,7 @@
 				7C6979391C8DEA81008FCF06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C69793A1C8DEA81008FCF06 /* Build configuration list for PBXNativeTarget "PlayingWithFourMapsUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +592,7 @@
 				7C69793C1C8DEA81008FCF06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
